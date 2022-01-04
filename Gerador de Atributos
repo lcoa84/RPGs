@@ -1,24 +1,14 @@
 ###Gerador automatico de Atributos para RPGs estilo D&D, TormentaRPG e etc.
 import random
 
-linha=('=')*100
+linha=('=')*94
 print(linha)
 print(linha)
-print("Bem Vindo a rolador de Atributos")
+print("\nBem Vindo a rolador de Atributos\n")
 print(linha)
 print(linha)
-dado=int(input("Quantos D6 você gostaria de rolar para cada atributo?"))
-print(linha)
-print(linha)
-forc=dado*(random.randint(1,6))
-dest=dado*(random.randint(1,6))
-cons=dado*(random.randint(1,6))
-int=dado*(random.randint(1,6))
-sab=dado*(random.randint(1,6))
-car=dado*(random.randint(1,6))
-print("Força:",forc)
-print("Destreza:",dest)
-print("Constituição:",cons)
-print("Inteligencia:",int)
-print("Sabedoria:",sab)
-print("Carisma:",car)
+opcao=int(input("\nQuantos D6 você gostaria de rolar para cada atributo?\nDigite 1 para rolar 4d6 e ignorar o menor dado\nDigite 2 para 3d6"))
+if opcao==1:
+  for rolagem in range(0,4):
+    print("Sua rolagem e:",random.randint(1,6))
+ 
