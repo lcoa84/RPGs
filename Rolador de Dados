@@ -1,0 +1,44 @@
+import random
+
+linha=("*")*95
+print(linha)
+print(linha)
+print(linha)
+print("\nBem Vindo a Rolagem de dados\n")
+print(linha)
+print(linha)
+print(linha)
+while True:
+    dados=int(input("\nQuantos dados você deseja rolar?\n"))
+    print(linha)
+    tipo=int(input("\nQual tipo de dado você deseja rolar?\nDigite 2 para D2\nDigite 4 para D4\nDigite 6 para D6\nDigite 8 para D8\nDigite 10 para D10\nDigite 20 para D20\nDigite 100 para D100\nDigite 0 para SAIR\n"))
+    print(linha)
+    if tipo==2:
+        for rolagem in range(0,dados):
+            print("Sua rolagem e:",random.randint(1,2))
+    elif tipo==4:
+        for rolagem in range(0,dados):
+            print("Sua rolagem e:",random.randint(1,4))
+    elif tipo==6:
+        for rolagem in range(0,dados):
+            print("Sua rolagem e:",random.randint(1,6))
+    elif tipo==8:
+        for rolagem in range(0,dados):
+            print("Sua rolagem e:",random.randint(1,8))
+    elif tipo==10:
+        for rolagem in range(0,dados):
+            print("Sua rolagem e:",random.randint(1,10))
+    elif tipo==12:
+        for rolagem in range(0,dados):
+            print("Sua rolagem e:",random.randint(1,12))
+    elif tipo==20:
+        for rolagem in range(0,dados):
+            print("Sua rolagem e:",random.randint(1,20))
+    elif tipo==100:
+        for rolagem in range(0,dados):
+            print("Sua rolagem e:",random.randint(1,100))
+    elif tipo==0:
+        print("Até breve!!!")
+        break
+    else:
+        print("Digite um número válido!!!")
